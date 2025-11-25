@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.spllit.app/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.spllit.app/about</loc>
+  </url>
+  <url>
+    <loc>https://www.spllit.app/blog</loc>
+  </url>
+  <url>
+    <loc>https://www.spllit.app/careers</loc>
+  </url>
+  <url>
+    <loc>https://www.spllit.app/contact-us</loc>
+  </url>
+  <url>
+    <loc>https://www.spllit.app/faq</loc>
+  </url>
+  <url>
+    <loc>https://www.spllit.app/pricing</loc>
+  </url>
+  <url>
+    <loc>https://www.spllit.app/privacy-policy</loc>
+  </url>
+  <url>
+    <loc>https://www.spllit.app/terms-of-service</loc>
+  </url>
+</urlset>
