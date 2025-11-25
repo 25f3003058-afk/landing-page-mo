@@ -16,15 +16,13 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto">
         <div className={`text-center mb-12 ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight text-balance font-poppins">
-            Simplify Your International
+            Simplify Your Everyday
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700">
-              Transactions
-            </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700">Travel</span>
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed text-balance">
-            Say goodbye to complicated international payments. Transfer funds and send money across borders with just a
-            few taps.
+            Say goodbye to costly solo rides. Split fares instantly with verified co-travelers going the same route as
+            you.
           </p>
 
           <div
@@ -88,25 +86,55 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Trusted Companies Section - Made responsive with fewer columns on mobile */}
+        {/* Trusted Companies Section - Marquee Animation */}
         <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-2xl p-6 sm:p-8 lg:p-12 border border-purple-200">
           <p className="text-center text-gray-600 text-xs sm:text-sm font-semibold mb-6 sm:mb-8 uppercase tracking-wide">
             Trusted by leading institutions
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-center justify-items-center">
-            <div className="flex flex-col items-center gap-2">
-              <img src="/iitm-logo.jpg" alt="IIT Madras" className="h-10 sm:h-12 w-auto object-contain" />
-              <p className="text-xs text-gray-600 text-center font-semibold">IIT Madras</p>
-            </div>
-            <div className="text-center">
-              <p className="text-xs sm:text-sm lg:text-lg font-bold text-gray-500 hover:text-gray-700 transition-colors duration-300">
-                IITM
-              </p>
-            </div>
-            <div className="text-center">
-              <p className="text-xs sm:text-sm lg:text-lg font-bold text-gray-500 hover:text-gray-700 transition-colors duration-300">
-                Indian Institute of Technology
-              </p>
+          <div className="overflow-hidden">
+            <div className="flex animate-marquee gap-8 sm:gap-12 lg:gap-16">
+              {/* First set of companies */}
+              <div className="flex gap-8 sm:gap-12 lg:gap-16 min-w-max">
+                <div className="flex flex-col items-center justify-center gap-2 whitespace-nowrap">
+                  <img src="/iitm-logo.jpg" alt="IIT Madras" className="h-8 sm:h-10 w-auto object-contain" />
+                  <p className="text-xs text-gray-600 font-semibold">IIT Madras</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-500">IITM</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p className="text-xs sm:text-sm lg:text-base font-bold text-gray-500 max-w-[120px] text-center">
+                    Indian Institute of Technology
+                  </p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-500">SarvamAI</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-500">MongoDB</p>
+                </div>
+              </div>
+              {/* Repeated set for seamless loop */}
+              <div className="flex gap-8 sm:gap-12 lg:gap-16 min-w-max">
+                <div className="flex flex-col items-center justify-center gap-2 whitespace-nowrap">
+                  <img src="/iitm-logo.jpg" alt="IIT Madras" className="h-8 sm:h-10 w-auto object-contain" />
+                  <p className="text-xs text-gray-600 font-semibold">IIT Madras</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-500">IITM</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p className="text-xs sm:text-sm lg:text-base font-bold text-gray-500 max-w-[120px] text-center">
+                    Indian Institute of Technology
+                  </p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-500">SarvamAI</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-500">MongoDB</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

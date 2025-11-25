@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://spllit.app/sitemap.xml

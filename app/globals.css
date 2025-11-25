@@ -187,6 +187,16 @@
     }
   }
 
+  /* Added marquee animation for horizontal scrolling */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out;
   }
@@ -201,5 +211,14 @@
 
   .animate-pulse-scale {
     animation: pulse-scale 2s ease-in-out infinite;
+  }
+
+  /* Added marquee animation utility class */
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
   }
 }
