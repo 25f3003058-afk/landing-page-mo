@@ -8,10 +8,35 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SPLLIT - Simplify International Transactions",
+  // ye batata hai ki website ka base URL kya hai
+  metadataBase: new URL("https://www.spllit.app"),
+
+  // Browser tab ka title + Google search title
+  title: "SPLLIT – Simplify International Transactions",
+
+  // Google search description
   description:
-    "Make international payments a breeze with SPLLIT. Zero hidden fees, effortless currency conversion, and seamless money transfers worldwide.",
+    "Make international payments a breeze with SPLLIT. Zero hidden fees and effortless splitting.",
+
+  // jo pehle bhi tha
   generator: "v0.app",
+
+  // 👇 sabse important: canonical URL
+  alternates: {
+    canonical: "https://www.spllit.app/",
+  },
+
+  // Social share / Open Graph data
+  openGraph: {
+    title: "SPLLIT – Simplify International Transactions",
+    description:
+      "Make international payments a breeze with SPLLIT. Zero hidden fees and effortless splitting.",
+    url: "https://www.spllit.app/",
+    siteName: "SPLLIT",
+    type: "website",
+  },
+
+  // tumhara existing icons as-is
   icons: {
     icon: [
       {
@@ -29,7 +54,8 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-}
+};
+
 
 export default function RootLayout({
   children,
