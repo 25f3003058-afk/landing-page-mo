@@ -6,6 +6,7 @@ import ZeroFees from "@/components/zero-fees"
 import MoneyTransfers from "@/components/money-transfers"
 import SupportModal from "@/components/support-modal"
 import Footer from "@/components/footer"
+import FeatureCards from "@/components/feature-cards"
 
 export const metadata = {
   title: "SPLLIT - Simplify International Transactions",
@@ -23,6 +24,7 @@ export default function Home() {
       <CurrencyConversion />
       <ZeroFees />
       <MoneyTransfers />
+      <FeatureCards />
       <Footer />
     </main>
   )

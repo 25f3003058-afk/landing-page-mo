@@ -3,19 +3,19 @@ import Image from "next/image"
 
 export default function PaymentHassles() {
   const features = [
-    "Multi-currency accounts with real rates",
-    "Send & receive in 150+ countries",
-    "Ultra-low fees with no hidden charges",
-    "Transfer in minutes, not days",
+    "Smart route matching for people traveling the same way",
+    "Travel with verified riders only",
+    "Auto-split fare with transparent pricing",
+    "Save 30–60% on daily commute expenses",
   ]
 
   return (
     <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-16 text-balance">
-          Say Goodbye to International
+          Say Goodbye to
           <br />
-          <span className="text-purple-600">Payment Hassles</span>
+          <span className="text-purple-600">Solo Travel Costs</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">

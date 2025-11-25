@@ -3,10 +3,12 @@ import Image from "next/image"
 
 export default function ZeroFees() {
   const features = [
-    "Send internationally with ZERO hidden fees",
-    "Transparent pricing always",
-    "Real, mid-market exchange rates",
-    "Save up to 8x vs traditional banks",
+    "Full Transparency",
+    "Automatic fare calculation & split between riders",
+    "No platform convenience fees",
+    "No surge pricing",
+    "Real-time trip cost preview before ride starts",
+    "Pay only your portion — nothing more",
   ]
 
   return (

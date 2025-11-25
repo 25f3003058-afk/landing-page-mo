@@ -3,26 +3,26 @@ import Image from "next/image"
 
 export default function CurrencyConversion() {
   const conversions = [
-    { from: "Turkey Lira", to: "₺1,234.50 - 0.5% fees" },
-    { from: "South Africa Rand", to: "R 234.25 - 0.5% fees" },
-    { from: "United States", to: "$ 234.00 - 0.5% fees" },
-    { from: "British Pound", to: "£ 234.50 - 0.5% fees" },
+    { from: "Matches based on", to: "route similarity" },
+    { from: "Filters by", to: "safety preferences (e.g., women-only)" },
+    { from: "Shows", to: "verified rider profiles" },
+    { from: "Real-time", to: "updates & live ride tracking" },
   ]
 
   return (
     <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-16 text-balance">
-          Effortlessly <span className="text-purple-600">Convert</span>
+          Effortlessly <span className="text-purple-600">Match With</span>
           <br />
-          <span className="text-purple-600">Currency</span>
+          <span className="text-purple-600">Riders Going Your Way</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="h-96 sm:h-[500px]">
             <Image
               src="/mobile-currency-conversion-interface.jpg"
-              alt="Currency conversion"
+              alt="Rider matching interface"
               width={360}
               height={640}
               className="rounded-3xl w-full h-full object-cover shadow-lg"
@@ -46,8 +46,8 @@ export default function CurrencyConversion() {
             </div>
 
             <div className="mt-8 p-6 bg-purple-100 rounded-lg">
-              <p className="text-sm text-gray-600 mb-2">Mid-market rate guaranteed</p>
-              <p className="text-2xl font-bold text-purple-600">Global accounts in minutes</p>
+              <p className="text-sm text-gray-600 mb-2">Corporate & college network-based matching</p>
+              <p className="text-2xl font-bold text-purple-600">Find your perfect ride match</p>
             </div>
           </div>
         </div>
