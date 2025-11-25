@@ -6,7 +6,22 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
- 
-}
 
-export default nextConfig
+  async headers() {
+    return [
+      {
+        // sabhi routes pe apply hoga
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-cache, no-store, must-revalidate',
+          },
+        ],
+      },
+    ];
+  },
+};
+
+export default nextConfig;
+
