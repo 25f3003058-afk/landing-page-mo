@@ -11,7 +11,7 @@ const pricingPlans = [
     description: "Perfect for students and individuals",
     price: 1,
     originalPrice: 19,
-    discount: "90% OFF",
+    discount: "95% OFF",
     features: [
       { name: "Monthly transfer limit: $2,500", included: true },
       { name: "Zero hidden fees", included: true },
@@ -47,7 +47,7 @@ const pricingPlans = [
 ]
 
 export default function PricingPage() {
-  const [billingPeriod, setBillingPeriod] = useState<"monthly" | "yearly">("monthly")
+  const [billingPeriod, setBillingPeriod] = useState<"daily" | "weekly">("daily")
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-background to-secondary/30">
@@ -64,9 +64,9 @@ export default function PricingPage() {
 
             <div className="flex items-center justify-center gap-4 mb-12">
               <button
-                onClick={() => setBillingPeriod("monthly")}
+                onClick={() => setBillingPeriod("daily")}
                 className={`px-6 py-2 rounded-lg font-medium transition-all ${
-                  billingPeriod === "monthly"
+                  billingPeriod === "daily"
                     ? "bg-primary text-primary-foreground"
                     : "bg-secondary text-foreground hover:bg-muted"
                 }`}
@@ -74,9 +74,9 @@ export default function PricingPage() {
                 Day Plan 
               </button>
               <button
-                onClick={() => setBillingPeriod("yearly")}
+                onClick={() => setBillingPeriod("weekly")}
                 className={`px-6 py-2 rounded-lg font-medium transition-all ${
-                  billingPeriod === "yearly"
+                  billingPeriod === "weekly"
                     ? "bg-primary text-primary-foreground"
                     : "bg-secondary text-foreground hover:bg-muted"
                 }`}
@@ -117,7 +117,7 @@ export default function PricingPage() {
                         {plan.discount}
                       </span>
                     </div>
-                    <p className="text-sm text-muted-foreground">per month, billed {billingPeriod}</p>
+                    <p className="text-sm text-muted-foreground">per day, billed {billingPeriod}</p>
                   </div>
 
                   <button
