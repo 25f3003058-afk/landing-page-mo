@@ -8,7 +8,7 @@ const pricingPlans = [
     description: "Perfect for students and beginners",
     originalPrice: 19,
     discountedPrice: 1,
-    discount: "90%",
+    discount: "95%",
     features: [
       "Send up to ₹50,000/month",
       "Zero hidden fees",
@@ -74,7 +74,7 @@ export default function PricingSection() {
               <div className="mb-6">
                 <div className="flex items-baseline gap-2">
                   <span className="text-4xl font-bold text-gray-900">₹{plan.discountedPrice}</span>
-                  <span className="text-sm text-gray-600">/month</span>
+                  <span className="text-sm text-gray-600">/day</span>
                 </div>
                 <p className="text-sm text-gray-500 mt-2">
                   <span className="line-through">₹{plan.originalPrice}</span>
