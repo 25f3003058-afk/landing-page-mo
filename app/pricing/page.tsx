@@ -71,7 +71,7 @@ export default function PricingPage() {
                     : "bg-secondary text-foreground hover:bg-muted"
                 }`}
               >
-                Monthly
+                Day Plan 
               </button>
               <button
                 onClick={() => setBillingPeriod("yearly")}
@@ -81,7 +81,7 @@ export default function PricingPage() {
                     : "bg-secondary text-foreground hover:bg-muted"
                 }`}
               >
-                Yearly (Save 20%)
+                Weekly(Save 46%)
               </button>
             </div>
           </div>
