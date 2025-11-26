@@ -13,23 +13,15 @@ export const metadata: Metadata = {
     "Make international payments a breeze with SPLLIT. Zero hidden fees, effortless currency conversion, and seamless money transfers worldwide.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/spllit-logo1.png.png", 
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/spllit-logo1.png.png", 
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/spllit-logo1.png.png", 
-        type: "image/png",
-      },
-    ],
-    apple: "/spllit-logo1.png.png",
-  },
-}
+  icon: [
+    { url: "/spllit-logo1.png", sizes: "16x16" },
+    { url: "/spllit-logo1.png", sizes: "32x32" },
+    { url: "/spllit-logo1.png", sizes: "64x64" },
+    { url: "/spllit-logo1.png", sizes: "128x128" },
+    { url: "/spllit-logo1.png", sizes: "256x256" },
+  ],
+  apple: "/spllit-logo1.png",
+},
 
 
 export default function RootLayout({
