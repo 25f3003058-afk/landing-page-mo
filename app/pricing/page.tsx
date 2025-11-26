@@ -117,7 +117,14 @@ export default function PricingPage() {
                         {plan.discount}
                       </span>
                     </div>
-                    <p className="text-sm text-muted-foreground">per day, billed {billingPeriod}</p>
+                 
+                    <p className="text-sm text-muted-foreground">
+                      {billingPeriod === "daily"
+                        ? "per day, billed daily"
+                        : "per week, billed weekly"}
+                    </p>
+
+
                   </div>
 
                   <button
