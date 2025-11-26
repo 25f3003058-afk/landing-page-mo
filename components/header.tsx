@@ -49,7 +49,7 @@ export default function Header() {
 
           {/* Join Community Button - Right */}
           <a
-            href="https://chat.whatsapp.com/demo-group"
+            href="https://chat.whatsapp.com/C98i7MgJmsX3Zos0hpJYPY?mode=hqrt1"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 bg-white hover:bg-purple-100 text-black hover:text-purple-600 px-4 lg:px-6 py-2 lg:py-2.5 rounded-full font-semibold text-xs lg:text-sm transition-all duration-300 transform hover:scale-105 ml-4 lg:ml-8 whitespace-nowrap"
@@ -84,7 +84,7 @@ export default function Header() {
             ))}
 
             <a
-              href="https://chat.whatsapp.com/demo-group"
+              href="https://chat.whatsapp.com/C98i7MgJmsX3Zos0hpJYPY?mode=hqrt1"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white hover:bg-purple-100 text-black hover:text-purple-600 px-4 sm:px-6 py-2 sm:py-2.5 rounded-full font-semibold text-sm text-center transition-all duration-300 transform hover:scale-105"
