@@ -81,7 +81,7 @@ export default function PricingPage() {
                     : "bg-secondary text-foreground hover:bg-muted"
                 }`}
               >
-                Weekly(Save 46%)
+                Weekly (Save 46%)
               </button>
             </div>
           </div>
