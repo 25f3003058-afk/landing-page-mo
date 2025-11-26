@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   generator: "v0.app",
   icons: {
   icon: [
-    { url: "/spllit-logo1.png", sizes: "16x16" },
-    { url: "/spllit-logo1.png", sizes: "32x32" },
-    { url: "/spllit-logo1.png", sizes: "64x64" },
-    { url: "/spllit-logo1.png", sizes: "128x128" },
-    { url: "/spllit-logo1.png", sizes: "256x256" },
+    { url: "/d977d034-73e9-4418-b316-435862b564e2.png", sizes: "16x16" },
+    { url: "/d977d034-73e9-4418-b316-435862b564e2.png", sizes: "32x32" },
+    { url: "/d977d034-73e9-4418-b316-435862b564e2.png", sizes: "64x64" },
+    { url: "/d977d034-73e9-4418-b316-435862b564e2.png", sizes: "128x128" },
+    { url: "/d977d034-73e9-4418-b316-435862b564e2.png", sizes: "256x256" },
   ],
   apple: "/spllit-logo1.png",
 },
