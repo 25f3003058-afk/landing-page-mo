@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     { url: "/d977d034-73e9-4418-b316-435862b564e2.png", sizes: "128x128" },
     { url: "/d977d034-73e9-4418-b316-435862b564e2.png", sizes: "256x256" },
   ],
-  apple: "/spllit-logo1.png",
+  apple: "/d977d034-73e9-4418-b316-435862b564e2.png",
 },
 
 
