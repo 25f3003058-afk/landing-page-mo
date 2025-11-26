@@ -15,19 +15,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/spllit-logo.png", 
+        url: "/spllit-logo1.png.png", 
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/spllit-logo.png", 
+        url: "/spllit-logo1.png.png", 
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/spllit-logo.png", 
+        url: "/spllit-logo1.png.png", 
         type: "image/png",
       },
     ],
-    apple: "/spllit-logo.png",
+    apple: "/spllit-logo1.png.png",
   },
 }
 
