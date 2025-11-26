@@ -15,19 +15,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/spllit-logo.png", // your new logo
+        url: "/d977d034-73e9-4418-b..._imresizer.png", // your new logo
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/spllit-logo.png", // same for dark mode (or add separate image)
+        url: "/d977d034-73e9-4418-b..._imresizer.png", // same for dark mode (or add separate image)
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/spllit-logo.png", // fallback SVG/icon
+        url: "/d977d034-73e9-4418-b..._imresizer.png", // fallback SVG/icon
         type: "image/png",
       },
     ],
-    apple: "/spllit-logo.png",
+    apple: "/d977d034-73e9-4418-b..._imresizer.png",
   },
 }
 
