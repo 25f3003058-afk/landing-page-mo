@@ -47,7 +47,7 @@ const pricingPlans = [
 ]
 
 export default function PricingPage() {
-  const [billingPeriod, setBillingPeriod] = useState<"daily" | "weekly">("daily")
+  const [billingPeriod, setBillingPeriod] = useState<"daily" | "weekly">("weekly")
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-background to-secondary/30">
