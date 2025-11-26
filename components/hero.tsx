@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto">
         <div className={`text-center mb-12 ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight text-balance font-poppins">
-            Simplify Your Everyday hi 
+            Simplify Your Everyday  
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700">Travel</span>
           </h1>
