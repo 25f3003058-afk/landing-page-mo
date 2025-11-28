@@ -9,13 +9,12 @@ const teamMembers = [
   {
     name: "Ankit Raj Choudhari",
     role: "Founder & CEO",
-    bio: "Visionary leader with 10+ years in fintech. Creating financial solutions that matter.",
+    bio: "Chinaaar ",
     image: "/professional-man-ceo.jpg",
     social: {
-      email: "ankit@spllit.com",
-      linkedin: "#",
+      email: "ankit@spllit.app",
       twitter: "#",
-      github: "#",
+      
     },
   },
   {
