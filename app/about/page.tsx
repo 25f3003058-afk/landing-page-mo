@@ -1,3 +1,36 @@
+export const metadata = {
+  title: "About SPLLIT – Meet the Team Behind the Future of Shared Payments",
+  description:
+    "Learn about SPLLIT, the global smart-sharing platform simplifying group travel payments and shared expenses. Meet our founders and explore our mission.",
+  keywords: [
+    "SPLLIT team",
+    "about SPLLIT",
+    "shared payments app",
+    "group travel payments",
+    "founders of SPLLIT",
+    "travel fintech startup"
+  ],
+  openGraph: {
+    title: "About SPLLIT – Meet the Team",
+    description:
+      "Learn about SPLLIT, the global smart-sharing platform simplifying group travel payments and shared expenses.",
+    url: "https://spllit.app/about",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "About SPLLIT Team",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://spllit.app/about",
+  },
+};
+
+
 "use client"
 
 import Header from "@/components/header"
@@ -59,8 +92,7 @@ export default function AboutPage() {
               About SPLLIT
             </h1>
             <p className="text-base sm:text-lg lg:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              We're on a mission to revolutionize international payments and make financial freedom accessible to
-              everyone, everywhere.
+              At Spllit, we believe travel should be efficient and affordable. We’re creating a platform that connects everyday travelers to share rides and reduce expenses.
             </p>
           </div>
         </div>
@@ -73,16 +105,13 @@ export default function AboutPage() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-poppins text-white">Who We Are</h2>
             <div className="space-y-4 sm:space-y-6 text-sm sm:text-base text-slate-300 leading-relaxed">
               <p>
-                SPLLIT was founded in 2024 with a simple vision: to eliminate the friction in international payments. We
-                saw how traditional banking systems were slow, expensive, and outdated, so we built something better.
+               Spllit was founded in 2025 with a bold vision: to reinvent the way people commute. We noticed that thousands of individuals travel the same route every day — yet they travel alone, spending more money, wasting time, and adding to traffic and pollution. We knew there had to be a smarter way — so we built one.
               </p>
               <p>
-                Today, SPLLIT serves thousands of users across 150+ countries, processing millions in transactions with
-                zero hidden fees and real-time currency conversion. We're just getting started.
+                Spllit connects people who share the same route, time, and destination, enabling them to travel together, Spllit the cost, and enjoy a more efficient daily journey. With trusted user-matching, secure deposits, and a community-driven experience, we’re making commuting simpler, safer, and more affordable.
               </p>
               <p>
-                Our team believes that technology should empower people, not complicate their lives. Every feature we
-                build, every decision we make, is guided by this principle.
+               We believe technology should bring people closer and improve everyday life. Every step we take, every feature we create, is driven by our mission to make smarter travel accessible to everyone — while saving money and helping the planet.
               </p>
             </div>
           </div>
@@ -119,7 +148,7 @@ export default function AboutPage() {
               Our Core Team
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto">
-              Visionary leaders driving innovation in global payments
+             Starting with shared commuting, we’re on a path to help people Spllit and save across every shared experience — travel, trips, bills, and beyond.
             </p>
           </div>
 
@@ -205,7 +234,7 @@ export default function AboutPage() {
             Join Us on This Journey
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-slate-300 mb-6 sm:mb-8">
-            We're always looking for talented individuals who share our vision of transforming global finance.
+           We welcome innovators who believe in smarter travel and a more connected world.
           </p>
           <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-lg transition-all transform hover:scale-105 hover:shadow-2xl">
             Explore Careers
