@@ -9,9 +9,9 @@ import Footer from "@/components/footer"
 import FeatureCards from "@/components/feature-cards"
 
 export const metadata = {
-  title: "SPLLIT - Simplify International Transactions",
+  title: "SPLLIT",
   description:
-    "Make international payments a breeze with one platform. Zero hidden fees, effortless currency conversion, and seamless money transfers.",
+    "Say goodbye to expensive solo travel — Spllit helps you connect, ride together, and keep more in your pocket.",
 }
 
 export default function Home() {
