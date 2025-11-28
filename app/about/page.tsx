@@ -9,8 +9,8 @@ const teamMembers = [
   {
     name: "Ankit Raj Choudhari",
     role: "Founder & CEO",
-    bio: "Chinaaar ",
-    image: "/professional-man-ceo.jpg",
+    bio: "",
+    image: "",
     social: {
       email: "ankit@spllit.app",
       twitter: "#",
@@ -18,24 +18,24 @@ const teamMembers = [
     },
   },
   {
-    name: "Sarah Mitchell",
+    name: "Raunak Ratan",
     role: "CTO & Co-Founder",
-    bio: "Full-stack engineer passionate about building secure, scalable financial platforms.",
-    image: "/professional-woman-engineer.jpg",
+    bio: "",
+    image: "",
     social: {
-      email: "sarah@spllit.com",
+      email: "co-founder@spllit.app",
       linkedin: "#",
       twitter: "#",
       github: "#",
     },
   },
   {
-    name: "Priya Sharma",
+    name: "Saurav Kumar",
     role: "Head of Operations",
-    bio: "Operations expert ensuring seamless service delivery across 150+ countries.",
-    image: "/professional-woman-operations.jpg",
+    bio: "",
+    image: "",
     social: {
-      email: "priya@spllit.com",
+      email: "sauravkumar@spllit.com",
       linkedin: "#",
       twitter: "#",
       github: "#",
