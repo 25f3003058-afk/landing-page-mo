@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     "fintech startup",
   ],
   openGraph: {
-    title: "About SPLLIT – Meet the Team",
+    title: "About Spllit – Meet the Team",
     description:
-      "Learn about SPLLiT, the global smart-sharing platform simplifying shared expenses.",
+      "Spllit — the smart-sharing solution designed to make commuting and cost-sharing easier than eve.",
     url: "https://spllit.app/about",
     type: "website",
     images: [
