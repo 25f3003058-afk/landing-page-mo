@@ -21,8 +21,8 @@ export default function Footer() {
                 <Image
                   src="/spllit-logo.png"
                   alt="SPLLIT Logo"
-                  width={350}
-                  height={350}
+                  width={120}
+                  height={120}
                   className="w-full h-auto object-contain"
                 />
               </div>
