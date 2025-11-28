@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About SPLLIT – Meet the Team Behind Shared Payments",
+  title: "About Spllit – Meet the Team Behind Shared Payments",
   description:
     "Learn how Spllit connects people traveling the same way to save time and money together.",
   keywords: [
