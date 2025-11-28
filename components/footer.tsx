@@ -181,7 +181,7 @@ export default function Footer() {
                   <Instagram size={14} />
                 </a>
                 <a
-                  href="https://wa.me/919363793714"
+                  href="https://chat.whatsapp.com/C98i7MgJmsX3Zos0hpJYPY?mode=hqrt1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-slate-800 hover:bg-green-600 rounded-lg transition duration-300 transform hover:scale-110 hover:-translate-y-1"
