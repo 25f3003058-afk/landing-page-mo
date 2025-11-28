@@ -32,8 +32,8 @@ export default function Footer() {
               <div className="mt-4 sm:mt-6 space-y-2 sm:space-y-3">
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-400 hover:text-white transition transform hover:translate-x-1 duration-300">
                   <Mail size={14} className="flex-shrink-0" />
-                  <a href="mailto:ankitrajchoudhari@gmail.com" className="truncate">
-                    ankitrajchoudhari@gmail.com
+                  <a href="mailto:support@spllit.app" className="truncate">
+                    support@spllit.app
                   </a>
                 </div>
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-400 hover:text-white transition transform hover:translate-x-1 duration-300">
@@ -202,8 +202,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Footer */}
-        <div className="pt-8 text-center sm:text-left">
-          <p className="text-xs sm:text-sm text-slate-400">&copy; 2025 SPLLIT. All rights reserved.</p>
+        <div className="pt-8 text-center">
+          <p className="text-xs sm:text-sm text-slate-400" >&copy; 2025 SPLLIT. All rights reserved.</p>
         </div>
       </div>
     </footer>
