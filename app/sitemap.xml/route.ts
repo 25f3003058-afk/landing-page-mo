@@ -1,8 +1,11 @@
-export async function GET() {
-  const baseurl = "https://spllit.app";
+// app/sitemap.xml/route.ts
+import { NextResponse } from "next/server";
 
-  const staticPages = [
-    "/",
+export async function GET() {
+  const baseUrl = "https://spllit.app";
+
+  const staticRoutes = [
+    "",
     "/about",
     "/blog",
     "/careers",
@@ -13,28 +16,25 @@ export async function GET() {
     "/pricing",
     "/privacy-policy",
     "/safety",
-    "/spllit-experience",
+    "/split-experience",
     "/terms-of-service"
   ];
 
-  const urls = staticPages
-    .map((path) => {
-      return `
-        <url>
-          <loc>${baseurl}${path}</loc>
-          <changefreq>weekly</changefreq>
-          <priority>${path === "/" ? "1.0" : "0.7"}</priority>
-        </url>`;
+  const urls = staticRoutes
+    .map((route) => {
+      const path = route === "" ? "" : route;
+      return `<url><loc>${baseUrl}${path}</loc><changefreq>weekly</changefreq><priority>${route === "" ? "1.0" : "0.7"}</priority></url>`;
     })
     .join("");
 
-  const xml = `
-    <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      ${urls}
-    </urlset>`;
+  // NOTE: xml string starts immediately with <?xml (no preceding newline/space)
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">` +
+    `${urls}` +
+    `</urlset>`;
 
-  return new Response(xml, {
+  return new NextResponse(xml, {
+    status: 200,
     headers: {
       "Content-Type": "application/xml"
     }
