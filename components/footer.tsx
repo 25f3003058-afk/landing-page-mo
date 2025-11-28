@@ -74,14 +74,7 @@ export default function Footer() {
                     Features
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-slate-400 hover:text-purple-400 transition duration-300 hover:translate-x-1 inline-block transform"
-                  >
-                    Security
-                  </a>
-                </li>
+               
               </ul>
             </div>
 
@@ -118,7 +111,7 @@ export default function Footer() {
                     href="#"
                     className="text-slate-400 hover:text-purple-400 transition duration-300 hover:translate-x-1 inline-block transform"
                   >
-                    Press
+                    News
                   </a>
                 </li>
               </ul>
