@@ -1,36 +1,3 @@
-export const metadata = {
-  title: "About SPLLIT – Meet the Team Behind the Future of Shared Payments",
-  description:
-    "Learn about SPLLIT, the global smart-sharing platform simplifying group travel payments and shared expenses. Meet our founders and explore our mission.",
-  keywords: [
-    "SPLLIT team",
-    "about SPLLIT",
-    "shared payments app",
-    "group travel payments",
-    "founders of SPLLIT",
-    "travel fintech startup"
-  ],
-  openGraph: {
-    title: "About SPLLIT – Meet the Team",
-    description:
-      "Learn about SPLLIT, the global smart-sharing platform simplifying group travel payments and shared expenses.",
-    url: "https://spllit.app/about",
-    type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "About SPLLIT Team",
-      },
-    ],
-  },
-  alternates: {
-    canonical: "https://spllit.app/about",
-  },
-};
-
-
 "use client"
 
 import Header from "@/components/header"
