@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "SPLLIT",
     images: [
       {
-        url: "https://spllit.app/og-image.png",
+        url: "https://spllit.app/spllit-logo.png",
         width: 1200,
         height: 630,
         alt: "SPLLIT",
