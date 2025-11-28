@@ -174,7 +174,7 @@ export default function Footer() {
                   <Linkedin size={14} />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/spllit_official"
                   className="p-2 bg-slate-800 hover:bg-pink-600 rounded-lg transition duration-300 transform hover:scale-110 hover:-translate-y-1"
                   title="Instagram"
                 >
