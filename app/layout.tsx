@@ -63,14 +63,6 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
 };
-
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  return (
    
     export default function RootLayout({
   children,
@@ -132,7 +124,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
-
-  )
 }
