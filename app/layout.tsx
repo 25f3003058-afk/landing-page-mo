@@ -71,27 +71,68 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
+   
+    export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
     <html lang="en">
-<body className={"font-sans antialiased"}>
-  {children}
+      <head>
 
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        name: "SPLLIT",
-        url: "https://spllit.app",
-        description:
-          "Connect. Spllit. Save.",
-      }),
-    }}
-  />
+        {/* ⭐ WEBSITE SCHEMA */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "SPLLIT",
+              url: "https://spllit.app/",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://spllit.app/?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
 
-  <Analytics />
-</body>
+        {/* ⭐ ORGANIZATION / STARTUP SCHEMA */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "SPLLIT",
+              url: "https://spllit.app/",
+              logo: "https://spllit.app/spllit-logo.png",
+              description:
+                "SPLLIT helps people connect, ride together, split fares, and travel affordably.",
+              founder: {
+                "@type": "Person",
+                name: "Ankit Raj Choudhari",
+              },
+              sameAs: [
+                "https://instagram.com/spllitapp",
+                "https://linkedin.com/company/spllit",
+                "https://twitter.com/spllitapp",
+              ],
+            }),
+          }}
+        />
 
+      </head>
+
+      <body className="font-sans antialiased">
+        {children}
+        <Analytics />
+      </body>
     </html>
+  );
+}
+
   )
 }
