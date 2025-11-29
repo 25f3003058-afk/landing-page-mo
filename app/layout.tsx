@@ -52,15 +52,15 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon.png",
+        url: "/d977d034-73e9-4418-b..._imresizer.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/favicon-dark.png",
+        url: "/d977d034-73e9-4418-b..._imresizer.png",
         media: "(prefers-color-scheme: dark)",
       },
     ],
-    apple: "/apple-touch-icon.png",
+    apple: "/d977d034-73e9-4418-b..._imresizer.png",
   },
 };
    
