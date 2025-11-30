@@ -24,6 +24,16 @@ export default function Hero() {
             Say goodbye to costly solo rides. Split fares instantly with verified co-travelers going the same route as
             you.
           </p>
+          <div className="mx-auto w-full max-w-sm sm:max-w-md lg:max-w-none lg:mx-0 lg:ml-auto mb-6 lg:mb-8">
+            <Image
+              src="/hero.png"           // put your image in /public/hero-illustration.png
+              alt="Co-travel Illustration"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-contain rounded-xl shadow-xl"
+              priority={false}
+            />
+          </div>
 
           <div
             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-12 sm:mb-16 animate-slide-in-right"
