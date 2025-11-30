@@ -18,13 +18,14 @@ export default function Hero() {
             TOP HERO AREA (BACKGROUND ONLY HERE)
             ------------------------- */}
         <div
-          className="relative w-full text-center mb-12 rounded-3xl overflow-hidden"
-          style={{
-            backgroundImage: "url('/Hero.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
+           className="relative w-full text-center mb-12 rounded-3xl overflow-hidden"
+  style={{
+    backgroundImage: "url('/Hero.png')",
+    backgroundSize: "contain",      // ⬅ FULL image visible
+    backgroundPosition: "center",  
+    backgroundRepeat: "no-repeat",
+    height: "600px",                // ⬅ Adjust height to show full bus
+  }}
         >
           {/* subtle overlay for readability (adjust opacity if needed) */}
           <div className="absolute inset-0 bg-white/50 lg:bg-white/20 pointer-events-none" />
