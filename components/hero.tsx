@@ -26,7 +26,7 @@ export default function Hero() {
           </p>
           <div className="mx-auto w-full max-w-sm sm:max-w-md lg:max-w-none lg:mx-0 lg:ml-auto mb-6 lg:mb-8">
             <Image
-              src="/hero.png"           // put your image in /public/hero-illustration.png
+              src="/Hero.png"           // put your image in /public/hero-illustration.png
               alt="Co-travel Illustration"
               width={1200}
               height={800}
