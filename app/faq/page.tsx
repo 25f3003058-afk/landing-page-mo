@@ -11,85 +11,90 @@ const faqs = [
     questions: [
       {
         q: "What is SPLLIT?",
-        a: "SPLLIT is a fintech platform that simplifies international money transfers with real-time currency conversion, zero hidden fees, and secure transactions.",
+        a: "SPLLIT is a smart ride-sharing platform that helps people find trusted co-travellers, split travel costs, and enjoy safer, more affordable trips.",
       },
       {
         q: "How do I create an account?",
-        a: "Download our mobile app or visit our website, click 'Sign Up', and follow the verification process. You'll be ready to transfer money in minutes!",
+        a: "Simply download the SPLLIT app, sign up using your phone number or email, complete quick verification, and start finding or creating rides instantly.",
       },
       {
-        q: "Is SPLLIT available in my country?",
-        a: "SPLLIT operates in over 150 countries. Check our website to see if your country is supported.",
+        q: "Is SPLLIT available in my city?",
+        a: "SPLLIT is rolling out city by city. If your location isn’t active yet, you can join the waitlist inside the app and get early access when we launch.",
       },
+
     ],
   },
   {
     category: "Transfers & Payments",
     questions: [
-      {
-        q: "How long does a transfer take?",
-        a: "Most transfers are completed within 1-3 minutes. For some destinations, it may take up to 24 hours.",
-      },
-      {
-        q: "What is the minimum transfer amount?",
-        a: "The minimum transfer amount is $10 (or equivalent in your local currency). Maximum limits depend on your account verification level.",
-      },
-      {
-        q: "Are there any hidden fees?",
-        a: "No! We believe in complete transparency. All fees are clearly displayed before you confirm your transfer.",
-      },
+     {
+  q: "How long does it take to find a ride match?",
+  a: "Most users get a match within a few minutes based on route, timing, and trust score. In low-traffic areas, it may take slightly longer.",
+},
+{
+  q: "What is the minimum ride amount?",
+  a: "There’s no minimum ride amount. You only split the actual travel cost with your co-travellers based on distance and fare.",
+},
+{
+  q: "Are there any hidden fees?",
+  a: "No! SPLLIT has zero hidden charges. You only pay your share of the ride cost. All amounts are shown clearly before you confirm.",
+},
+
     ],
   },
   {
     category: "Security & Safety",
     questions: [
       {
-        q: "Is my money safe with SPLLIT?",
-        a: "Yes. We use bank-level encryption, two-factor authentication, and comply with all international financial regulations.",
-      },
-      {
-        q: "What should I do if my account is compromised?",
-        a: "Contact our support team immediately at support@spllit.com or call 9363793714. We'll secure your account within minutes.",
-      },
-      {
-        q: "How do you protect my personal information?",
-        a: "We use AES-256 encryption for all data and never share your information with third parties without your consent.",
-      },
+  q: "Is my information safe with SPLLIT?",
+  a: "Yes. SPLLIT uses advanced encryption, secure login, and a multi-layer AI safety system to protect your identity, ride details, and communication.",
+},
+{
+  q: "What should I do if my account is compromised?",
+  a: "If you notice any unusual activity, immediately reset your password and contact our support team at support@spllit.app. We will secure your account quickly.",
+},
+{
+  q: "How do you protect my personal information?",
+  a: "We protect your data with end-to-end encryption, strict privacy controls, and never share your personal details with anyone—including co-travellers—without your permission.",
+},
+
     ],
   },
   {
     category: "Pricing & Plans",
-    questions: [
-      {
-        q: "Which plan should I choose?",
-        a: "Students should choose our Student Plan for occasional transfers. Businesses should opt for the Corporate Plan for unlimited transfers and API access.",
-      },
-      {
-        q: "Can I change my plan later?",
-        a: "You can upgrade or downgrade your plan anytime. Changes take effect in your next billing cycle.",
-      },
-      {
-        q: "Do you offer discounts for annual subscriptions?",
-        a: "Yes, we offer 20% discount when you choose an annual subscription compared to monthly billing.",
-      },
-    ],
+questions: [
+  {
+    q: "Which plan should I choose?",
+    a: "If you're a casual rider, the Free Plan is perfect. If you want faster matches, advanced filters, AI Trust Score insights, and profile boosts, the Premium Plan is the best choice.",
+  },
+  {
+    q: "Can I change my plan later?",
+    a: "Yes. You can upgrade or downgrade your plan anytime from the Subscription section. Changes apply instantly or at the next billing cycle, depending on the platform.",
+  },
+  {
+    q: "Do you offer discounts for annual subscriptions?",
+    a: "Yes, SPLLIT offers special annual discounts—plus additional savings for students and early users during the launch phase.",
+  },
+],
+
   },
   {
     category: "Technical Support",
-    questions: [
-      {
-        q: "I'm having trouble logging in. What should I do?",
-        a: "Try resetting your password using the 'Forgot Password' option. If the issue persists, contact our support team.",
-      },
-      {
-        q: "Which browsers do you support?",
-        a: "SPLLIT works on all modern browsers including Chrome, Firefox, Safari, and Edge. We recommend using the latest version.",
-      },
-      {
-        q: "What should I do if the app crashes?",
-        a: "Update to the latest version from the App Store or Google Play. Clear your app cache and try again.",
-      },
-    ],
+questions: [
+  {
+    q: "I'm having trouble logging in. What should I do?",
+    a: "Double-check your phone number or email, then use the 'Forgot Password' option. If the problem continues, reach out to us at support@spllit.com.",
+  },
+  {
+    q: "Which browsers do you support?",
+    a: "SPLLIT works smoothly on all modern browsers—Chrome, Firefox, Safari, and Edge. For the best experience, use the latest version.",
+  },
+  {
+    q: "What should I do if the app crashes?",
+    a: "First, update to the latest version of the SPLLIT app. If the issue persists, try clearing your app cache or restarting your device.",
+  },
+],
+
   },
 ]
 
@@ -179,7 +184,7 @@ export default function FAQPage() {
                 href="mailto:ankitrajchoudhari@gmail.com"
                 className="bg-white text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-lg font-bold transition-all transform hover:scale-105 hover:shadow-lg"
               >
-                Email: ankitrajchoudhari@gmail.com
+                Email: support@spllit.app
               </a>
               <a
                 href="tel:9363793714"
