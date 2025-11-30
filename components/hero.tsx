@@ -12,64 +12,48 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative pt-20 sm:pt-32 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white">
+    <section className="pt-20 sm:pt-32 pb-12 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        {/* -------------------------
-            TOP HERO AREA (BACKGROUND ONLY HERE)
-            ------------------------- */}
-        <div
-           className="relative w-full text-center mb-12 rounded-3xl overflow-hidden"
-  style={{
-    backgroundImage: "url('/Hero.png')",
-    backgroundSize: "contain",      // ⬅ FULL image visible
-    backgroundPosition: "center",  
-    backgroundRepeat: "no-repeat",
-    height: "600px",                // ⬅ Adjust height to show full bus
-  }}
-        >
-          {/* subtle overlay for readability (adjust opacity if needed) */}
-          <div className="absolute inset-0 bg-white/50 lg:bg-white/20 pointer-events-none" />
+        <div className={`text-center mb-12 ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}>
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight text-balance font-poppins">
+            Simplify Your Everyday  
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700">Travel</span>
+          </h1>
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed text-balance">
+            Say goodbye to costly solo rides. Split fares instantly with verified co-travelers going the same route as
+            you.
+          </p>
 
-          {/* content layer */}
-          <div className={`relative z-10 py-16 sm:py-24 px-4 sm:px-6 lg:px-12 ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight font-poppins">
-              Simplify Your Everyday
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700">
-                Travel
-              </span>
-            </h1>
+          <div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-12 sm:mb-16 animate-slide-in-right"
+            style={{ animationDelay: "0.2s" }}
+          >
+            {/* <div className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-purple-50 rounded-full text-xs sm:text-base">
+              <span className="text-lg sm:text-2xl">🌍</span>
+              <span className="text-gray-700 font-semibold text-center">Launching Soon in Chennai</span>
+            </div> */}
+            <div className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-purple-50 rounded-full text-xs sm:text-base">
+  <div className="w-8 sm:w-10 h-8 sm:h-10 rounded-full overflow-hidden flex items-center justify-center">
+    <img
+      src="/launch-chennai.png.png"
+      alt="Launching Soon in Chennai"
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-              Say goodbye to costly solo rides. Split fares instantly with verified co-travelers going the same route as
-              you.
-            </p>
+  <span className="text-gray-700 font-semibold text-center">
+    Launching Soon in Chennai
+  </span>
+</div>
 
-            {/* CTA row */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-2">
-              <div className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-purple-50 rounded-full text-xs sm:text-base">
-                <div className="w-8 sm:w-10 h-8 sm:h-10 rounded-full overflow-hidden flex items-center justify-center">
-                  <img
-                    src="/launch-chennai.png.png"
-                    alt="Launching Soon in Chennai"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-
-                <span className="text-gray-700 font-semibold text-center">Launching Soon in Chennai</span>
-              </div>
-
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-10 py-2 sm:py-3 rounded-lg font-semibold text-sm sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105">
-                Get Early Access
-              </Button>
-            </div>
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-10 py-2 sm:py-6 rounded-lg font-semibold text-sm sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105">
+              Get Early Access
+            </Button>
           </div>
         </div>
 
-        {/* -------------------------
-            PHONE MOCKUPS (NO BACKGROUND IMAGE)
-            ------------------------- */}
+        {/* Phone Mockups with enhanced animations - Made responsive for mobile */}
         <div className="relative h-64 sm:h-96 lg:h-[500px] flex items-center justify-center gap-2 sm:gap-4 mb-12 sm:mb-16">
           <div
             className={`hidden lg:block absolute left-0 w-32 h-64 lg:w-40 lg:h-80 bg-purple-100 rounded-3xl shadow-lg transform -rotate-12 opacity-75 ${
@@ -116,17 +100,14 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* -------------------------
-            TRUSTED COMPANIES / MARQUEE
-            ------------------------- */}
+        {/* Trusted Companies Section - Marquee Animation */}
         <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-2xl p-6 sm:p-8 lg:p-12 border border-purple-200">
           <p className="text-center text-gray-600 text-xs sm:text-sm font-semibold mb-6 sm:mb-8 uppercase tracking-wide">
             Trusted by leading institutions
           </p>
-
           <div className="overflow-hidden">
-            <div className="flex gap-8 sm:gap-12 lg:gap-16 items-center">
-              {/* First set */}
+            <div className="flex animate-marquee gap-8 sm:gap-12 lg:gap-16">
+              {/* First set of companies */}
               <div className="flex gap-8 sm:gap-12 lg:gap-16 min-w-max">
                 <div className="flex flex-col items-center justify-center gap-2 whitespace-nowrap">
                   <img src="/iitm-logo.jpg" alt="IIT Madras" className="h-8 sm:h-10 w-auto object-contain" />
@@ -147,8 +128,7 @@ export default function Hero() {
                   <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-500">MongoDB</p>
                 </div>
               </div>
-
-              {/* Duplicate set for visual balance (you can duplicate more for marquee) */}
+              {/* Repeated set for seamless loop */}
               <div className="flex gap-8 sm:gap-12 lg:gap-16 min-w-max">
                 <div className="flex flex-col items-center justify-center gap-2 whitespace-nowrap">
                   <img src="/iitm-logo.jpg" alt="IIT Madras" className="h-8 sm:h-10 w-auto object-contain" />
@@ -172,9 +152,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        {/* end marquee */}
       </div>
-      {/* end max-w-7xl */}
     </section>
   )
-}
+} 
