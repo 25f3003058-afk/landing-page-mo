@@ -115,23 +115,24 @@ export default function Hero() {
           <div className="relative overflow-hidden">
             <div className="marquee-track flex items-center">
 
-              {/* FIRST SET */}
-              <div className="flex items-center gap-16 sm:gap-20 min-w-max marquee-set">
-                <p className="text-lg sm:text-xl font-semibold text-gray-600">IIT Madras</p>
-                <p className="text-lg sm:text-xl font-semibold text-gray-600">IITM</p>
-                <p className="text-lg sm:text-xl font-semibold text-gray-600">Indian Institute of Technology</p>
-                <p className="text-lg sm:text-xl font-semibold text-gray-600">SarvamAI</p>
-                <p className="text-lg sm:text-xl font-semibold text-gray-600">MongoDB</p>
-              </div>
+            {/* FIRST SET */}
+            <div className="flex items-center gap-16 sm:gap-20 min-w-max marquee-set">
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">Indian Institute of Technology</p>
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">SarvamAI</p>
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">MongoDB</p>
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">IIT Madras</p>
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">IITM</p>
+            </div>
+            
+            {/* SECOND SET — IDENTICAL */}
+            <div className="flex items-center gap-16 sm:gap-20 min-w-max marquee-set" aria-hidden="true">
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">Indian Institute of Technology</p>
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">SarvamAI</p>
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">MongoDB</p>
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">IIT Madras</p>
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">IITM</p>
+            </div>
 
-              {/* SECOND SET (IDENTICAL COPY) */}
-              <div className="flex items-center gap-16 sm:gap-20 min-w-max marquee-set" aria-hidden="true">
-                <p className="text-lg sm:text-xl font-semibold text-gray-600">IIT Madras</p>
-                <p className="text-lg sm:text-xl font-semibold text-gray-600">IITM</p>
-                <p className="text-lg sm:text-xl font-semibold text-gray-600">Indian Institute of Technology</p>
-                <p className="text-lg sm:text-xl font-semibold text-gray-600">SarvamAI</p>
-                <p className="text-lg sm:text-xl font-semibold text-gray-600">MongoDB</p>
-              </div>
 
             </div>
           </div>
