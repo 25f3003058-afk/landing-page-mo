@@ -126,7 +126,7 @@ export default function Hero() {
             
             {/* SECOND SET — IDENTICAL */}
             <div className="flex items-center gap-16 sm:gap-20 min-w-max marquee-set" aria-hidden="true">
-              <p className="text-lg sm:text-xl font-semibold text-gray-600">Indian Institute of Technology</p>
+              <p className="text-lg sm:text-xl font-semibold text-gray-600">  Indian Institute of Technology</p>
               <p className="text-lg sm:text-xl font-semibold text-gray-600">SarvamAI</p>
               <p className="text-lg sm:text-xl font-semibold text-gray-600">MongoDB</p>
               <p className="text-lg sm:text-xl font-semibold text-gray-600">IIT Madras</p>
