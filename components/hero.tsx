@@ -29,10 +29,24 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-12 sm:mb-16 animate-slide-in-right"
             style={{ animationDelay: "0.2s" }}
           >
-            <div className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-purple-50 rounded-full text-xs sm:text-base">
+            {/* <div className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-purple-50 rounded-full text-xs sm:text-base">
               <span className="text-lg sm:text-2xl">🌍</span>
-              <span className="text-gray-700 font-semibold text-center">Coming Soon in Chennai</span>
-            </div>
+              <span className="text-gray-700 font-semibold text-center">Launching Soon in Chennai</span>
+            </div> */}
+            <div className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-purple-50 rounded-full text-xs sm:text-base">
+  <div className="w-8 sm:w-10 h-8 sm:h-10 rounded-full overflow-hidden flex items-center justify-center">
+    <img
+      src="/launch-chennai.png"
+      alt="Launching Soon in Chennai"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  <span className="text-gray-700 font-semibold text-center">
+    Launching Soon in Chennai
+  </span>
+</div>
+
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-10 py-2 sm:py-6 rounded-lg font-semibold text-sm sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105">
               Coming Soon !!
             </Button>
