@@ -25,7 +25,7 @@ export default function Header() {
             className="flex-shrink-0 hover:opacity-80 transition-opacity duration-300 mr-2 sm:mr-6 md:mr-8"
           >
             <Image
-              src="/spllit-logo.png"
+              src="/d977d034-73e9-4418-b..._imresizer.png"
               alt="SPLLIT Logo"
               width={32}
               height={32}
