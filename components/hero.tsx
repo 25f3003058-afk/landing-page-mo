@@ -48,7 +48,7 @@ export default function Hero() {
 </div>
 
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-10 py-2 sm:py-6 rounded-lg font-semibold text-sm sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105">
-              Coming Soon !!
+              Get Early Access
             </Button>
           </div>
         </div>
