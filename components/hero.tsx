@@ -19,13 +19,15 @@ export default function Hero() {
             HERO HEADING + SUBTEXT
         ========================== */}
         <div className={`text-center mb-12 ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight text-balance font-poppins">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight font-poppins">
             Simplify Your Everyday  
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700">Travel</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700">
+              Travel
+            </span>
           </h1>
 
-          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed text-balance">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
             Say goodbye to costly solo rides. Split fares instantly with verified co-travelers going the same route as you.
           </p>
 
@@ -102,40 +104,52 @@ export default function Hero() {
         </div>
 
         {/* =========================
-            PERFECT CONTINUOUS MARQUEE
+            CONTINUOUS LOOP — TEXT ONLY
         ========================== */}
-        <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-2xl p-6 sm:p-8 lg:p-12 border border-purple-200">
+        <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-2xl p-6 sm:p-8 lg:px-12 lg:py-12 border border-purple-200">
 
-          <p className="text-center text-gray-600 text-xs sm:text-sm font-semibold mb-6 sm:mb-8 uppercase tracking-wide">
+          <p className="text-center text-gray-600 text-xs sm:text-sm font-semibold mb-6 uppercase tracking-wide">
             Trusted by leading institutions
           </p>
 
-          <div className="overflow-hidden">
+          <div className="relative overflow-hidden">
             <div className="marquee-track flex items-center">
 
               {/* FIRST SET */}
-              <div className="flex items-center gap-12 sm:gap-16 lg:gap-20 min-w-max marquee-set">
-                <LogoSet />
+              <div className="flex items-center gap-16 sm:gap-20 min-w-max marquee-set">
+                <p className="text-lg sm:text-xl font-semibold text-gray-600">IIT Madras</p>
+                <p className="text-lg sm:text-xl font-semibold text-gray-600">IITM</p>
+                <p className="text-lg sm:text-xl font-semibold text-gray-600">Indian Institute of Technology</p>
+                <p className="text-lg sm:text-xl font-semibold text-gray-600">SarvamAI</p>
+                <p className="text-lg sm:text-xl font-semibold text-gray-600">MongoDB</p>
               </div>
 
               {/* SECOND SET (IDENTICAL COPY) */}
-              <div className="flex items-center gap-12 sm:gap-16 lg:gap-20 min-w-max marquee-set">
-                <LogoSet />
+              <div className="flex items-center gap-16 sm:gap-20 min-w-max marquee-set" aria-hidden="true">
+                <p className="text-lg sm:text-xl font-semibold text-gray-600">IIT Madras</p>
+                <p className="text-lg sm:text-xl font-semibold text-gray-600">IITM</p>
+                <p className="text-lg sm:text-xl font-semibold text-gray-600">Indian Institute of Technology</p>
+                <p className="text-lg sm:text-xl font-semibold text-gray-600">SarvamAI</p>
+                <p className="text-lg sm:text-xl font-semibold text-gray-600">MongoDB</p>
               </div>
 
             </div>
           </div>
 
-          {/* SCOPED CSS ONLY FOR MARQUEE */}
+          {/* Scoped CSS */}
           <style jsx>{`
             .marquee-track {
-              width: max-content;
-              animation: scroll 18s linear infinite;
               display: flex;
+              width: max-content;
+              animation: scroll 20s linear infinite;
+              will-change: transform;
               gap: 0;
             }
             .marquee-track:hover {
               animation-play-state: paused;
+            }
+            .marquee-set {
+              flex: 0 0 auto;
             }
             @keyframes scroll {
               0% { transform: translateX(0); }
@@ -146,27 +160,5 @@ export default function Hero() {
 
       </div>
     </section>
-  )
-}
-
-/* Small helper component for cleaner code */
-function LogoSet() {
-  return (
-    <>
-      <div className="flex flex-col items-center justify-center gap-2 whitespace-nowrap">
-        <img src="/iitm-logo.jpg" className="h-8 sm:h-10 object-contain" />
-        <p className="text-xs text-gray-600 font-semibold">IIT Madras</p>
-      </div>
-
-      <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-500">IITM</p>
-
-      <p className="text-xs sm:text-sm lg:text-base font-bold text-gray-500 max-w-[120px] text-center">
-        Indian Institute of Technology
-      </p>
-
-      <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-500">SarvamAI</p>
-
-      <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-500">MongoDB</p>
-    </>
   )
 }
