@@ -27,7 +27,7 @@ export default function Footer() {
                 />
               </div>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-md">
-                Making international payments simple, secure, and affordable for everyone globally.
+               Making shared travel safer, smarter, and more affordable for everyone.
               </p>
               <div className="mt-4 sm:mt-6 space-y-2 sm:space-y-3">
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-400 hover:text-white transition transform hover:translate-x-1 duration-300">
