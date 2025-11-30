@@ -36,7 +36,7 @@ export default function Hero() {
             <div className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-purple-50 rounded-full text-xs sm:text-base">
   <div className="w-8 sm:w-10 h-8 sm:h-10 rounded-full overflow-hidden flex items-center justify-center">
     <img
-      src="/launch-chennai.png"
+      src="/launch-chennai.png.png"
       alt="Launching Soon in Chennai"
       className="w-full h-full object-cover"
     />
