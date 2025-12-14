@@ -37,31 +37,31 @@ export const metadata: Metadata = {
       "Connect. Spllit. Save.",
     url: "https://spllit.app",
     siteName: "SPLLIT",
-    images: [
-      {
-        url: "https://spllit.app/spllit-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "SPLLIT",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
+  //   images: [
+  //     {
+  //       url: "https://spllit.app/spllit-logo.png",
+  //       width: 1200,
+  //       height: 630,
+  //       alt: "SPLLIT",
+  //     },
+  //   ],
+  //   locale: "en_US",
+  //   type: "website",
+  // },
 
-  icons: {
-    icon: [
-      {
-        url: "/d977d034-73e9-4418-b..._imresizer.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/d977d034-73e9-4418-b..._imresizer.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-    ],
-    apple: "/d977d034-73e9-4418-b..._imresizer.png",
-  },
+  // icons: {
+  //   icon: [
+  //     {
+  //       url: "/d977d034-73e9-4418-b..._imresizer.png",
+  //       media: "(prefers-color-scheme: light)",
+  //     },
+  //     {
+  //       url: "/d977d034-73e9-4418-b..._imresizer.png",
+  //       media: "(prefers-color-scheme: dark)",
+  //     },
+  //   ],
+  //   apple: "/d977d034-73e9-4418-b..._imresizer.png",
+  // },
 };
    
     export default function RootLayout({
