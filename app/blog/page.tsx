@@ -14,7 +14,7 @@ const blogPosts = [
     date: "coming soon!!",
     author: "Spllit Team",
     category: "Tutorial",
-    image: "/international-payments-guide.jpg",
+    image: "/Tutorial.png",
     content:
       "With Spllit, you’re just a tap away from sharing rides, saving money, and a better commuting experience.",
   },
@@ -57,7 +57,7 @@ const blogPosts = [
     date: "coming soon!!",
     author: "Spllit Team",
     category: "Comparison",
-    image: "/fintech-vs-banks.jpg",
+    image: "/Comparison.png",
     content: "Solo travel often means higher expenses and longer journeys. Discover why Spllit’s shared travel solution is smarter, safer, and more affordable...",
   },
   {
@@ -77,7 +77,7 @@ const blogPosts = [
     date: "coming soon!!",
     author: "Spllit Team",
     category: "Features",
-    image: "/mobile-app-features.jpg",
+    image: "/Features.png",
     content:
       "From route matching to safe deposits and secure trip confirmations — see how the Spllit app is built to support every commuter...",
   },
@@ -89,7 +89,7 @@ const blogPosts = [
     date: "coming soon!!",
     author: "Spllit Team",
     category: "Travel",
-    image: "/customer-success-stories.jpg",
+    image: "/ten.png",
     content: "From split accommodations to reduced transaction fees, Spllit offers smarter tools that make global adventures more affordable. Here are the top ways travelers are maximizing savings while exploring the world together...",
   },
 ]

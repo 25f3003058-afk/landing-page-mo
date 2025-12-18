@@ -1,213 +1,136 @@
 "use client"
 
+import { motion } from "framer-motion"
+import { ArrowRight, Plus, Users, Shield, Zap } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { Mail, Linkedin, Twitter, Github } from "lucide-react"
-import { useState } from "react"
 
-const teamMembers = [
-  {
-    name: "Ankit Raj Choudhari",
-    role: "Founder & CEO",
-    bio: "",
-    image: "",
-    social: {
-      email: "ankit@spllit.app",
-      twitter: "#",
-      
-    },
-  },
-  {
-    name: "Raunak Ratan",
-    role: "CTO & Co-Founder",
-    bio: "",
-    image: "",
-    social: {
-      email: "co-founder@spllit.app",
-      linkedin: "#",
-      twitter: "#",
-      github: "#",
-    },
-  },
-  {
-    name: "Saurav Kumar",
-    role: "Head of Operations",
-    bio: "",
-    image: "",
-    social: {
-      email: "sauravkumar@spllit.com",
-      linkedin: "#",
-      twitter: "#",
-      github: "#",
-    },
-  },
-]
+// Professional Reveal
+const fader = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] }
+}
 
 export default function AboutPage() {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
-
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-[#FAFAFA] text-[#09090B] selection:bg-blue-100">
       <Header />
 
-      {/* Hero Section */}
-      <section className="pt-20 sm:pt-32 pb-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-transparent -z-10" />
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center animate-fade-in-up">
-            <h1 className="text-4xl sm:text-5xl lg:text-8xl font-bold mb-4 sm:mb-6 font-poppins bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-              About SPLLIT
+      {/* 1. HERO - ARCHITECTURAL LAYOUT */}
+      <section className="pt-48 pb-32 px-6">
+        <div className="max-w-[1200px] mx-auto">
+          <motion.div {...fader}>
+            <span className="text-[10px] font-mono tracking-[0.3em] text-blue-600 uppercase font-bold mb-6 block">
+              Established 2024
+            </span>
+            <h1 className="text-6xl md:text-[90px] font-bold tracking-tight leading-[0.9] mb-12">
+              The platform for <br />
+              <span className="text-slate-400">modern transit.</span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              At Spllit, we believe travel should be efficient and affordable. We’re creating a platform that connects everyday travelers to share rides and reduce expenses.
+            <p className="text-2xl text-slate-500 max-w-2xl leading-relaxed font-light">
+              Spllit is an infrastructure company. We build the protocols and systems 
+              that turn empty car seats into a global, reliable transit network.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* About Description - Made responsive with stacked layout on mobile */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
-          <div className="animate-fade-in-up">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-poppins text-white">Who We Are</h2>
-            <div className="space-y-4 sm:space-y-6 text-sm sm:text-base text-slate-300 leading-relaxed">
-              <p>
-               Spllit was founded in 2025 with a bold vision: to reinvent the way people commute. We noticed that thousands of individuals travel the same route every day — yet they travel alone, spending more money, wasting time, and adding to traffic and pollution. We knew there had to be a smarter way — so we built one.
-              </p>
-              <p>
-                Spllit connects people who share the same route, time, and destination, enabling them to travel together, Spllit the cost, and enjoy a more efficient daily journey. With trusted user-matching, secure deposits, and a community-driven experience, we’re making commuting simpler, safer, and more affordable.
-              </p>
-              <p>
-               We believe technology should bring people closer and improve everyday life. Every step we take, every feature we create, is driven by our mission to make smarter travel accessible to everyone — while saving money and helping the planet.
-              </p>
-            </div>
-          </div>
-
-          <div className="animate-slide-in-right" style={{ animationDelay: "0.2s" }}>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur-2xl opacity-30" />
-              <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-6 sm:p-8 rounded-3xl border border-purple-500/30">
-                <div className="grid grid-cols-3 gap-4">
-                  {[
-                    { number: "0+", label: "Countries" },
-                    { number: "0k+", label: "Transactions" },
-                    { number: "0%", label: "Hidden Fees" },
-                  ].map((stat, idx) => (
-                    <div key={idx} className="text-center">
-                      <p className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-                        {stat.number}
-                      </p>
-                      <p className="text-xs sm:text-sm text-slate-400 mt-2">{stat.label}</p>
-                    </div>
-                  ))}
-                </div>
+      {/* 2. CORE VALUES - 3 COLUMN CLEAN GRID */}
+      <section className="border-y border-slate-200 bg-white">
+        <div className="max-w-[1200px] mx-auto grid md:grid-cols-3 divide-x divide-slate-200">
+          {[
+            { icon: <Zap className="w-5 h-5" />, title: "Efficiency", text: "Optimizing routes with millisecond precision to reduce urban congestion." },
+            { icon: <Shield className="w-5 h-5" />, title: "Trust", text: "Multi-layered verification systems built for enterprise-grade security." },
+            { icon: <Users className="w-5 h-5" />, title: "Community", text: "Moving people together to create a more connected and sustainable world." }
+          ].map((item, i) => (
+            <motion.div 
+              key={i} 
+              {...fader} 
+              transition={{ delay: i * 0.1 }}
+              className="p-12 md:p-16 hover:bg-slate-50 transition-colors group"
+            >
+              <div className="mb-8 text-blue-600 group-hover:scale-110 transition-transform duration-300">
+                {item.icon}
               </div>
-            </div>
-          </div>
+              <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
+              <p className="text-slate-500 leading-relaxed text-sm">{item.text}</p>
+            </motion.div>
+          ))}
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-16 sm:py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-purple-600/10 via-pink-600/10 to-transparent">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 font-poppins bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Our Core Team
-            </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto">
-             Starting with shared commuting, we’re on a path to help people Spllit and save across every shared experience — travel, trips, bills, and beyond.
+      {/* 3. THE "WHY" - SPLIT CONTENT */}
+      <section className="py-32 px-6">
+        <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-24 items-start">
+          <motion.div {...fader} className="sticky top-32">
+            <h2 className="text-4xl font-bold tracking-tight mb-6">Why we exist</h2>
+            <div className="h-1 w-12 bg-blue-600" />
+          </motion.div>
+          
+          <motion.div {...fader} className="space-y-12 text-xl text-slate-500 font-light leading-relaxed">
+            <p>
+              Millions of people commute identical routes alone every day. 
+              This creates unnecessary cost, massive carbon emissions, and wasted time.
             </p>
-          </div>
+            <p className="text-black font-normal">
+              Spllit makes shared commuting feel natural. We match people by route and time, 
+              automating the logistics so you can focus on the journey.
+            </p>
+            <p>
+              We focus on systems that work quietly, consistently, and at real-world scale.
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
-          {/* Core Team Cards - Made responsive with single column on mobile */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-            {teamMembers.map((member, idx) => (
-              <div
-                key={idx}
-                className="group relative animate-fade-in-up"
-                style={{ animationDelay: `${idx * 0.2}s` }}
-                onMouseEnter={() => setHoveredCard(idx)}
-                onMouseLeave={() => setHoveredCard(null)}
+      {/* 4. STATS - MINIMALIST STRIP */}
+      <section className="py-24 bg-black text-white rounded-[2rem] mx-4 mb-32">
+        <div className="max-w-[1200px] mx-auto px-12 grid grid-cols-2 md:grid-cols-4 gap-12">
+          {[
+            { label: "Countries", val: "0+" },
+            { label: "Trips Shared", val: "0k" },
+            { label: "Platform Fee", val: "0%" },
+            { label: "Uptime", val: "00.00%" },
+          ].map((s, i) => (
+            <div key={i}>
+              <p className="text-4xl font-bold tracking-tighter mb-2">{s.val}</p>
+              <p className="text-[10px] font-mono uppercase tracking-widest text-slate-500">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 5. TEAM - CLEAN ROW INTERFACE */}
+      <section className="pb-48 px-6">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-xs font-mono text-slate-400 uppercase tracking-[0.3em] mb-12">Leadership</h2>
+          <div className="divide-y divide-slate-200 border-t border-slate-200">
+            {[
+              { name: "Ankit Raj Choudhari", role: "Founder & CEO" },
+              { name: "Raunak Ratan", role: "CTO & Co-Founder" },
+              { name: "Saurav Kumar", role: "Head of Operations" },
+            ].map((member, i) => (
+              <motion.div 
+                key={i}
+                whileHover={{ x: 10 }}
+                className="group flex items-center justify-between py-10 transition-all cursor-default"
               >
-                {/* Card Background Glow */}
-                <div
-                  className={`absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur-xl opacity-0 transition-all duration-300 ${
-                    hoveredCard === idx ? "opacity-50" : ""
-                  }`}
-                />
-
-                {/* Card */}
-                <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 sm:p-8 border border-purple-500/30 h-full flex flex-col transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
-                  {/* Profile Image */}
-                  <div className="mb-4 sm:mb-6 overflow-hidden rounded-xl">
-                    <img
-                      src={member.image || "/placeholder.svg"}
-                      alt={member.name}
-                      className="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-
-                  {/* Content */}
-                  <h3 className="text-lg sm:text-2xl font-bold text-white mb-1 sm:mb-2 font-poppins">{member.name}</h3>
-                  <p className="text-purple-400 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">{member.role}</p>
-                  <p className="text-slate-300 text-xs sm:text-sm mb-4 sm:mb-6 flex-1 leading-relaxed">{member.bio}</p>
-
-                  {/* Social Links - Hidden by default, shown on hover */}
-                  <div
-                    className={`flex gap-2 sm:gap-3 transition-all duration-300 ${
-                      hoveredCard === idx ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
-                    }`}
-                  >
-                    <a
-                      href={`mailto:${member.social.email}`}
-                      className="p-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition-all transform hover:scale-110"
-                      title="Email"
-                    >
-                      <Mail size={16} />
-                    </a>
-                    <a
-                      href={member.social.linkedin}
-                      className="p-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all transform hover:scale-110"
-                      title="LinkedIn"
-                    >
-                      <Linkedin size={16} />
-                    </a>
-                    <a
-                      href={member.social.twitter}
-                      className="p-2 bg-blue-400 hover:bg-blue-500 rounded-lg transition-all transform hover:scale-110"
-                      title="Twitter"
-                    >
-                      <Twitter size={16} />
-                    </a>
-                    <a
-                      href={member.social.github}
-                      className="p-2 bg-gray-600 hover:bg-gray-700 rounded-lg transition-all transform hover:scale-110"
-                      title="GitHub"
-                    >
-                      <Github size={16} />
-                    </a>
-                  </div>
+                <div>
+                  <h4 className="text-2xl font-semibold tracking-tight">{member.name}</h4>
+                  <p className="text-slate-500 font-mono text-xs mt-1">{member.role}</p>
                 </div>
-              </div>
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity">
+                  <Plus className="w-6 h-6 text-blue-600 rotate-45" />
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 font-poppins text-white">
-            Join Us on This Journey
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-slate-300 mb-6 sm:mb-8">
-           We welcome innovators who believe in smarter travel and a more connected world.
-          </p>
-          <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-lg transition-all transform hover:scale-105 hover:shadow-2xl">
-            Explore Careers
-          </button>
-        </div>
-      </section>
+     
 
       <Footer />
     </main>
