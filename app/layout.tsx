@@ -1,11 +1,11 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const geist = Geist({ subsets: ["latin"] });
+const geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://spllit.app"),
@@ -15,15 +15,14 @@ export const metadata: Metadata = {
     template: "%s | SPLLIT",
   },
 
-  description:
-    "Connect. Spllit. Save.",
+  description: "Connect. Spllit. Save.",
 
   keywords: [
     "split payments",
     "event spllit",
     "ride split",
-    "travel Split",
-    "Trip split",
+    "travel split",
+    "trip split",
     "SPLLIT app",
   ],
 
@@ -31,33 +30,24 @@ export const metadata: Metadata = {
     canonical: "https://spllit.app",
   },
 
-  
   openGraph: {
     title: "SPLLIT",
-    description:
-      "Connect. Spllit. Save.",
+    description: "Connect. Spllit. Save.",
     url: "https://spllit.app",
     siteName: "SPLLIT",
-export const metadata = {
-  title: "Finance Fast",
-  description: "Fast and simple finance landing page",
-
-  icons: {
-    icon: "/d977d034-73e9-4418-b..._imresizer.png",
-    apple: "/d977d034-73e9-4418-b..._imresizer.png",
+    type: "website",
+    locale: "en_US",
   },
 };
 
-   
-    export default function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <head>
-
         {/* ⭐ WEBSITE SCHEMA */}
         <script
           type="application/ld+json"
@@ -76,7 +66,7 @@ export const metadata = {
           }}
         />
 
-        {/* ⭐ ORGANIZATION / STARTUP SCHEMA */}
+        {/* ⭐ ORGANIZATION SCHEMA */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -100,7 +90,6 @@ export const metadata = {
             }),
           }}
         />
-
       </head>
 
       <body className="font-sans antialiased">
