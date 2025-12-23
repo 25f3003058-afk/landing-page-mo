@@ -1,8 +1,9 @@
-
 import type React from "react";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { GeistSans, GeistMono } from "geist/font";
 import "./globals.css";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://spllit.app"),
 
@@ -88,7 +89,9 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="font-sans antialiased">
+      <body
+        className={`${GeistSans.className} ${GeistMono.className} antialiased`}
+      >
         {children}
         <Analytics />
       </body>
