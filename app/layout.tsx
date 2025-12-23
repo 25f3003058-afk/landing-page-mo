@@ -31,38 +31,23 @@ export const metadata: Metadata = {
     canonical: "https://spllit.app",
   },
 
+  
   openGraph: {
     title: "SPLLIT",
     description:
       "Connect. Spllit. Save.",
     url: "https://spllit.app",
     siteName: "SPLLIT",
-  //   images: [
-  //     {
-  //       url: "https://spllit.app/spllit-logo.png",
-  //       width: 1200,
-  //       height: 630,
-  //       alt: "SPLLIT",
-  //     },
-  //   ],
-  //   locale: "en_US",
-  //   type: "website",
-  // },
+export const metadata = {
+  title: "Finance Fast",
+  description: "Fast and simple finance landing page",
 
-  // icons: {
-  //   icon: [
-  //     {
-  //       url: "/d977d034-73e9-4418-b..._imresizer.png",
-  //       media: "(prefers-color-scheme: light)",
-  //     },
-  //     {
-  //       url: "/d977d034-73e9-4418-b..._imresizer.png",
-  //       media: "(prefers-color-scheme: dark)",
-  //     },
-  //   ],
-  //   apple: "/d977d034-73e9-4418-b..._imresizer.png",
-  // },
+  icons: {
+    icon: "/d977d034-73e9-4418-b..._imresizer.png",
+    apple: "/d977d034-73e9-4418-b..._imresizer.png",
+  },
 };
+
    
     export default function RootLayout({
   children,
