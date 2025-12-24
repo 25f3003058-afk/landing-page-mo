@@ -48,10 +48,15 @@ export default function Hero() {
                 Launching Soon in Chennai
               </span>
             </div>
+<Button
+  variant="default"
+  size="lg"
+  className="bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-10 py-2 sm:py-6 rounded-lg font-semibold text-sm sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
+>
+  Get Early Access
+</Button>
 
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-10 py-2 sm:py-6 rounded-lg font-semibold text-sm sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105">
-              Get Early Access
-            </Button>
+            
           </div>
         </div>
 

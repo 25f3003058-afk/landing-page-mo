@@ -6,12 +6,22 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 
 // Professional Reveal
-const fader = {
-  initial: { opacity: 0, y: 20 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] }
-}
+import { Variants } from "framer-motion";
+
+const fader: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function AboutPage() {
   return (
@@ -21,7 +31,13 @@ export default function AboutPage() {
       {/* 1. HERO - ARCHITECTURAL LAYOUT */}
       <section className="pt-48 pb-32 px-6">
         <div className="max-w-[1200px] mx-auto">
-          <motion.div {...fader}>
+         <motion.div
+  variants={fader}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+>
+
             <span className="text-[10px] font-mono tracking-[0.3em] text-blue-600 uppercase font-bold mb-6 block">
               Established 2024
             </span>
