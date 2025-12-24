@@ -1,0 +1,3 @@
+# Cloudflare Pages will detect pnpm from pnpm-lock.yaml
+# This file documents the expected Node.js version
+nodeVersion = "18"
