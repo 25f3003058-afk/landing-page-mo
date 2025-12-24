@@ -1,0 +1,5 @@
+name = "landing-page-mo"
+compatibility_date = "2025-01-01"
+
+[pages]
+build_output_dir = "out"
